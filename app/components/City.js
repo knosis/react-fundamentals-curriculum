@@ -1,6 +1,6 @@
-var React = require('react');
+import React from 'react'
 
-var City = React.createClass({
+let City = React.createClass({
   render: function() {
     return (
       <div>
@@ -10,5 +10,5 @@ var City = React.createClass({
   }
 });
 
-module.exports = City;
+export default City
 

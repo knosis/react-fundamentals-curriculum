@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react'
 
 
-var Forecast = React.createClass({
+let Forecast = React.createClass({
   render: function() {
     return (
       <div>
@@ -11,4 +11,4 @@ var Forecast = React.createClass({
   }
 });
 
-module.exports = Forecast;
+export Default Forecast

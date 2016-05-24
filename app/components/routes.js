@@ -1,19 +1,17 @@
-var React = require('react');
-var render = require('react-dom').render;
-var ReactDOM = require('react-dom');
-var Router = require('react-router').Router;
-var Route = require('react-router').Route;
-var hashHistory = Router.hashHistory;
-var Main = require('./Main');
-var Forecast = require('./Forecast');
-var City = require('./City');
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Router, { Route, hashHistory, render } from 'react-router'
+import Main from './Main'
+import Forecast from './Forecast'
+import City from './City'
 
-module.exports = function (props) {
-  return (
-  <Route path="/" component={Main}>
-    <Route path="/forecast" component={Forecast}>
-      <Route path="/cities/:city" component={City}/>
+const routes = (
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+      <IndexRoute component={Home} />
+      <Route path="/forecast" component={Forecast}>
+        <Route path="/cities/:city" component={City}/>
+      </Route>
     </Route>
-  </Route>
-  )
-}
+  </Router>
+)

@@ -1,9 +1,8 @@
-var React = require('react');
-var HelloWorld = require('./HelloWorld');
-var ReactRouter = require('react-router').Router;
-var Link = require('react-router').Link;
+import React from 'react'
+import HelloWorld from './HelloWorld'
+import ReactRouter { Router, Link } from 'react-router'
 
-var Main = React.createClass({
+let Main = React.createClass({
   render: function() {
     return (
       <div>
@@ -22,5 +21,4 @@ var Main = React.createClass({
   }
 });
 
-module.exports = Main;
-
+export default Main
