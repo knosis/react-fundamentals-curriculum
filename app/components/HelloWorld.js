@@ -1,13 +1,14 @@
 var React = require('react');
 
-function HelloWorld () {
-  return (
-    <div>
-      <h2>
-        Hello World
-      </h2>
-    </div>
-  )
-}
+var HelloWorld = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <h2>Weather Input</h2>
+        <h3>Get Weather Button</h3>
+      </div>
+    )
+  }
+});
 
 module.exports = HelloWorld;
