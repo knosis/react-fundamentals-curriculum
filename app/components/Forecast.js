@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 let Forecast = React.createClass({
   render: function() {
     return (
@@ -11,4 +10,4 @@ let Forecast = React.createClass({
   }
 });
 
-export Default Forecast
+export default Forecast

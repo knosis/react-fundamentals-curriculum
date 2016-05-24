@@ -1,9 +1,10 @@
 import React from 'react'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import ReactDOM from 'react-dom'
-import Router, { Route, hashHistory, render } from 'react-router'
 import Main from './Main'
 import Forecast from './Forecast'
 import City from './City'
+import Home from './Home'
 
 const routes = (
   <Router history={hashHistory}>
@@ -15,3 +16,5 @@ const routes = (
     </Route>
   </Router>
 )
+
+export default routes
